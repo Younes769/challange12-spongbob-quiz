@@ -1,0 +1,85 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #87ceeb;
+  background-image: url("spongebob-flower-background-1920-x-1080-qjxiu65ik153tp3u.png");
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #2f4f4f;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 5px solid #ffd700;
+  position: relative;
+}
+
+.quiz-container::before {
+  content: "";
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+h1 {
+  color: #ff4500;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.btn {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 5px #cd5c5c;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #ff69b4;
+  transform: scale(1.1);
+}
+
+.next-btn {
+  display: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  box-shadow: 0 5px #388e3c;
+}
+
+#result-container {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #ff4500;
+}
+
+.answer-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer-buttons .btn {
+  width: 80%;
+  margin-bottom: 10px;
+}
